@@ -6,11 +6,6 @@ const wordSearch = (letters, word) => {
     const verticalJoin = transposedLetters.map(el => el.join(''));
     const horizontalJoin = letters.map(ls => ls.join(''));
     console.log(verticalJoin);
-
-    // for (let i = verticalJoin.length - 1; i > 0; i--) {
-    //     console.log(verticalJoin[i].join(""));
-    //     i++;
-    // }
     
     for (const v of verticalJoin) {
         //each column, search for word
